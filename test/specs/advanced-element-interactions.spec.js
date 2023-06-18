@@ -17,7 +17,7 @@ describe('advanced element interactions', () => {
         await browser.pause(2000);
     });
 
-    it.only ('dropdown list', async () => {
+    it ('dropdown list', async () => {
         await browser.url("/Dropdown-Checkboxes-RadioButtons/index.html");
         const programLanguage = await $('#dropdowm-menu-1');
         await programLanguage.selectByAttribute('value', 'python');
@@ -33,5 +33,21 @@ describe('advanced element interactions', () => {
         await frontendLanguage.selectByVisibleText('CSS');
         await expect(frontendLanguage).toHaveValueContaining('CSS', {ignoreCase: true});
         await browser.pause('2000');
+    });
+
+    it.only ('state commands',  async () => {
+        await browser.url("/Dropdown-Checkboxes-RadioButtons/index.html");
+        const lettuceRadiaButton = await $('[value="lettuce"]');
+        const lettuceRadioButton_isDisplayed = await lettuceRadiaButton.isDisplayed();
+        await expect(lettuceRadioButton_isDisplayed).toEqual(true);
+        await expect(lettuceRadiaButton).toBeEnabled();
+
+        const lettuceRadioButton_isClickable= await lettuceRadiaButton.isClickable();
+        await expect(lettuceRadioButton_isClickable).toEqual(true);
+        
+        const cabbageRadiaButton = await $('[value="cabbage"]');
+        const cabbageRadiaButton_isEnabled = await cabbageRadiaButton.isEnabled();
+        await expect(cabbageRadiaButton_isEnabled).toEqual(false);
+        await expect(cabbageRadiaButton).toBeDisabled();
     });
 });
