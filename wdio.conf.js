@@ -23,7 +23,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*advanced-element-interactions.spec.js'
+        './test/specs/**/wait-commands.spec.js'
     ],
     // Patterns to exclude.
     exclude: [
