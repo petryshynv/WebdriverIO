@@ -35,7 +35,7 @@ describe('advanced element interactions', () => {
         await browser.pause('2000');
     });
 
-    it.only ('state commands',  async () => {
+    it ('state commands',  async () => {
         await browser.url("/Dropdown-Checkboxes-RadioButtons/index.html");
         const lettuceRadiaButton = await $('[value="lettuce"]');
         const lettuceRadioButton_isDisplayed = await lettuceRadiaButton.isDisplayed();
@@ -50,4 +50,13 @@ describe('advanced element interactions', () => {
         await expect(cabbageRadiaButton_isEnabled).toEqual(false);
         await expect(cabbageRadiaButton).toBeDisabled();
     });
+
+    it.only ('actions', async () => {
+        await browser.url("/Actions/index.html");
+        const drag = await $('[id="draggable"]');
+        const drop = await $('[id="droppable"]');
+        await drag.dragAndDrop(drop);
+        await browser.pause('2000');
+    }
+    )
 });
