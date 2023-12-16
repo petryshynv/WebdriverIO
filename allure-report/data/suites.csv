@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Nov 20 20:37:27 CET 2023","Mon Nov 20 20:37:27 CET 2023","29","","webdriveruniversity - contact page","","","","invalid submission - dont submmit all info",""
+"failed","Mon Nov 20 20:37:12 CET 2023","Mon Nov 20 20:37:27 CET 2023","14674","","webdriveruniversity - contact page","","","","valid submission - submit all information",""
+"passed","Mon Nov 20 20:37:27 CET 2023","Mon Nov 20 20:37:27 CET 2023","25","","webdriveruniversity - contact page","","","","""before each"" hook for webdriveruniversity - contact page",""

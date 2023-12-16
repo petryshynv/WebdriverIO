@@ -51,7 +51,7 @@ describe('advanced element interactions', () => {
         await expect(cabbageRadiaButton).toBeDisabled();
     });
 
-    it.only ('actions', async () => {
+    it('actions', async () => {
         await browser.url("/Actions/index.html");
         const drag = await $('[id="draggable"]');
         const drop = await $('[id="droppable"]');
