@@ -11,5 +11,6 @@ class HomePage extends BasePage {
     get categoryMenuComponent() {
         return CategoryMenuComponent;
     }
+    //git test
 }
 export default new HomePage();
