@@ -5,7 +5,7 @@ class HomePage extends BasePage {
     open(){
         return super.open("");
     }
-
+//git tets
     get categoryMenuComponent() {
         return CategoryMenuComponent;
     }
