@@ -8,6 +8,7 @@ class HomePage extends BasePage {
 //git tets
 //one more test
 //another tset testGit2
+//test3
     get categoryMenuComponent() {
         return CategoryMenuComponent;
     }
