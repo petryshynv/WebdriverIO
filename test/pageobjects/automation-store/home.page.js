@@ -6,6 +6,7 @@ class HomePage extends BasePage {
         return super.open("");
     }
 //git tets
+//one more test
 //another tset
     get categoryMenuComponent() {
         return CategoryMenuComponent;
